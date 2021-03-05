@@ -1,0 +1,26 @@
+Source: osqp
+Section: libdevel
+Priority: optional
+Maintainer: Aleksandr Rozhdestvenskii <ASRozhdestvenskiy@sberbank.ru>
+Build-Depends: debhelper (>= 12),
+               cmake
+Standards-Version: 4.4.1
+Homepage: https://github.com/oxfordcontrol/osqp
+Vcs-Git: https://github.com/oxfordcontrol/osqp.git
+Vcs-Browser: https://github.com/oxfordcontrol/osqp
+
+Package: libosqp
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Description: The OSQP (Operator Splitting Quadratic Program) solver is a numerical optimization package
+
+Package: libosqp-dev
+Section: libdevel
+Multi-Arch: same
+Architecture: any
+Depends: libosqp (= ${binary:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: libosqp development files

@@ -1,0 +1,5 @@
+usr/include
+usr/lib/*/cmake/osqp
+usr/lib/cmake/qdldl
+usr/lib/*/libqdldl.a
+usr/lib/*/libosqp.a
